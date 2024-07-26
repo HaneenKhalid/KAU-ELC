@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        background-color: #404352; /* لون الخلفية */
+        color: #F8BD49; /* لون النص */
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+        direction: rtl; /* الكتابة من اليمين لليسار */
+    }
+    h1 {
+        margin-bottom: 40px;
+        font-size: 45px; /* حجم الخط للعنوان */
+        font-family: Arial, sans-serif; /* استخدام نفس نوع الخط كالسابق */
+    }
+    .timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin: 50px auto 125px; /* تعديل المسافة السفلية */
+        width: 80%;
+    }
+    .line-horizontal {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        margin-top: 125px; /* تعديل المسافة العلوية */
+    }
+    .line-horizontal::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 2px; /* سمك الخط */
+        background-color: #fff; /* لون الخط */
+        z-index: -1;
+    }
+    .point {
+        position: relative;
+        width: 30px; /* قطر الدائرة */
+        height: 30px; /* قطر الدائرة */
+        border: 2px solid #F8BD49; /* لون الحدود */
+        background-color: #F8BD49; /* لون الخلفية */
+        border-radius: 50%; /* شكل الدائرة */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        font-size: 16px; /* حجم الخط للأرقام */
+        color: #000; /* لون الأرقام */
+    }
+    .stage {
+        position: absolute;
+        width: 200px; /* عرض المربع */
+        text-align: center;
+        color: #000; /* لون النص داخل المربعات */
+        background-color: #fff; /* لون خلفية المربعات */
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .stage1 {
+        top: -60px; /* تعديل للمربع الأول */
+    }
+    .stage2 {
+        top: 50px; /* تعديل للمربع الثاني */
+    }
+    .stage3 {
+        top: -60px; /* تعديل للمربع الثالث */
+    }
+    .stage4 {
+        top: 50px; /* تعديل للمربع الرابع */
+    }
+    .stage5 {
+        top: -70px; /* تعديل للمربع الخامس */
+    }
+    .stage6 {
+        top: 50px; /* تعديل للمربع السادس */
+    }
+    .stage7 {
+        top: -70px; /* تعديل للمربع السابع */
+    }
+    .stage8 {
+        top: 50px; /* تعديل للمربع الثامن */
+    }
+    .stage9 {
+        top: -85px; /* تعديل للمربع التاسع */
+    }
+    /* تنسيق الأزرار */
+    .buttons {
+        position: fixed;
+        bottom: 20px; /* المسافة من الأسفل */
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 80%;
+        background-color: rgba(64, 67, 82, 0.5); /* تصحيح لون الخلفية */
+        padding: 10px 0;
+        border-radius: 10px;
+    }
+    .buttons a {
+        background-color: #F8BD49; /* لون خلفية الزر */
+        color: #000; /* لون النص */
+        padding: 15px 30px; /* تعديل حجم الحشو */
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 0 20px; /* تعديل المسافة بين الأزرار */
+        font-size: 18px;
+        display: inline-block;
+    }
+    .buttons a:hover {
+        background-color: #d4a338; /* لون خلفية الزر عند التمرير */
+    }
+</style>
+</head>
+<body>
+    <h1>الجدول الزمني للمسابقة</h1>
+    <div class="timeline">
+        <!-- الخط الأفقي الأول -->
+        <div class="line-horizontal">
+            <div class="point">1<div class="stage stage1">تسجيل الفرق المهتمة بالمشاركة.</div></div>
+            <div class="point">2<div class="stage stage2">تقديم الأفكار والمشاريع القيادية من قبل الفرق المسجلة.</div></div>
+            <div class="point">3<div class="stage stage3">إغلاق باب التسجيل وتقديم الأفكار.</div></div>
+            <div class="point">4<div class="stage stage4">تقييم ومراجعة جميع الأفكار المقدمة من قبل اللجنة المنظمة.</div></div>
+            <div class="point">5<div class="stage stage5">إخطار الفرق المختارة بتأهلهم للمرحلة التالية.</div></div>
+            <div class="point">6<div class="stage stage6">حان وقت العمل! ستبدأ الفرق في تنفيذ مبادراتها بإشراف اللجنة المنظمة، مع توثيق كل خطوة والتحديات التي تواجهها.</div></div>
+            <div class="point">7<div class="stage stage7">تقديم تقرير شامل يوضح نتائج المبادرة وتأثيرها الإيجابي على الكلية.</div></div>
+            <div class="point">8<div class="stage stage8">تقييم المبادرات النهائية بناءً على معايير محددة تشمل الإبداع، التنظيم، والتأثير الإيجابي.</div></div>
+            <div class="point">9<div class="stage stage9">سنعلن عن النتائج ونحدد الفريق الفائز في حفل الختام، حيث سيتم تكريم الفائزين وتوزيع الجوائز والشهادات.</div></div>
+        </div>
+    </div>
+    <div class="buttons">
+        <a href="registration_form.html">الرجوع</a>
+        <a href="signup.html">التالي</a>
+    </div>
+</body>
+</html>

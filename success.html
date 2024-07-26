@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تأكيد التسجيل</title>
+    <style>
+        body {
+            font-family: 'Droid Arabic Naskh', Arial, sans-serif;
+            background: linear-gradient(135deg, #F8BD49, #F5F5F5);
+            color: #404352;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            direction: rtl;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            background: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 220, 150, 0.3), transparent);
+            opacity: 0.5;
+            z-index: 0;
+            transform: rotate(-30deg);
+        }
+        h2 {
+            color: #F8BD49;
+            font-size: 2em;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        .message {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        .back-button {
+            background-color: #404352;
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.2em;
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .back-button:hover {
+            background-color: #333;
+            transform: translateY(-2px);
+        }
+        .back-button:active {
+            background-color: #222;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>تم التسجيل بنجاح!</h2>
+        <p class="message">نتطلع لرؤية مبادرتك وإبداعاتك. شكراً لتسجيلك في المسابقة.</p>
+        <a class="back-button" href="index.html">الرجوع إلى الصفحة الرئيسية</a>
+    </div>
+</body>
+</html>
